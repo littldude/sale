@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="css/jquery.modal.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
     <script src="js/timer.js"></script>
-    <link rel="stylesheet" href="js/style.css"> -->
+    <script src="js/jquery.modal.min.js"></script>
     <title>Новогодняя распродажа</title>
 </head>
 <body>
@@ -43,45 +44,66 @@
     <section class="intro">
         <div class="container">
             <div class="intro__inner">
+                <img class="intro__img-mobile" src="img/bg-intro-mobile.png" alt="Image">
                 <h1 class="title title-intro">Новогодняя распродажа курсов</h1>
                 <!-- /.title -->
                 <p class="subtitle text">Подари себе новую жизнь. Раскрой
                     свои таланты. Осуществи свои мечты</p>
                 <!-- /.subtitle -->
+                <div class="intro-timer__title--mobile">До конца распродажи осталось:</div>
             </div>
             <!-- /.intro__inner -->
+            <div class="intro-timer">
+                <div class="intro-timer__title">До конца распродажи осталось:</div>
+                <div class="timer__inner">
+                        <div class="timer__inner--item">
+                            <div class="timer__inner--item__col">
+                                <div class="timer__inner--item__num" id="days"></div>
+                                <div class="timer__inner--item__text">дней</div>
+                            </div>
+                            <!-- /.timer__inner--item__col -->
+                        </div>
+                        <!-- /.timer__inner-item -->
+                        <div class="timer__inner--item">
+                            <div class="timer__inner--item__col">
+                                <div class="timer__inner--item__num" id="hours"></div>
+                                <div class="timer__inner--item__text">часов</div>
+                            </div>
+                            <!-- /.timer__inner--item__col -->
+                        </div>
+                        <!-- /.timer__inner-item -->
+                        <div class="timer__inner--item">
+                            <div class="timer__inner--item__col">
+                                <div class="timer__inner--item__num" id="minutes"></div>
+                                <div class="timer__inner--item__text">минут</div>
+                            </div>
+                            <!-- /.timer__inner--item__col -->
+                        </div>
+                        <!-- /.timer__inner-item -->
+                        <div class="timer__inner--item">
+                            <div class="timer__inner--item__col">
+                                <div class="timer__inner--item__num" id="seconds"></div>
+                                <div class="timer__inner--item__text">секунд</div>
+                            </div>
+                            <!-- /.timer__inner--item__col -->
+                        </div>
+                        <!-- /.timer__inner-item -->
+                </div>
+                <!-- /.timer__inner -->
+                <a class="button button-timer" href="#course">Выбрать курсы</a>
+                <!-- /.button -->
+            </div>
+            <!-- /.intro-timer -->
         </div>
         <!-- /.container -->
     </section>
     <!-- /.intro -->
-    <!-- <div class="timer">
-        <div class="clock">
-            <div class="column days">
-            <div class="timer" id="days"></div>
-            <div class="text">DAYS</div>
-        </div>
-        <div class="timer days">:</div>
-            <div class="column">
-            <div class="timer" id="hours"></div>
-            <div class="text">HOURS</div>
-        </div>
-        <div class="timer">:</div>
-            <div class="column">
-            <div class="timer" id="minutes"></div>
-        <div class="text">MINUTES</div>
-        </div>
-        <div class="timer">:</div>
-            <div class="column">
-            <div class="timer" id="seconds"></div>
-        <div class="text">SECONDS</div>
-        </div>
-        </div>
-    </div> -->
-    <!-- /.timer -->
 
     <section class="video">
         <div class="container">
             <div class="video__inner">
+                <h2 class="title title-video">Заголовок для видео</h2>
+                <!-- /.title -->
                 <iframe class="video__inner--item" src="https://www.youtube.com/embed/SEEV5RuiIcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!-- /.video__inner -->
@@ -93,7 +115,7 @@
         <img class="package-img" src="img/animal.png" alt="Art">
         <div class="title title-dark">Уроки по саморазвитию на любой вкус</div>
         <!-- /.title -->
-        <div class="package__inner">
+        <div class="package__inner" id="course">
             <div class="package__inner--item package__item">
                 <div class="package__item--header">
                     <h3 class="package__item--header__title -dark">I пакет</h3>
@@ -103,12 +125,23 @@
                 </div>
                 <!-- /.package__item-header -->
                 <div class="package__item--text">
-                    <a href="#" class="package__link -dark">"Осознанное родительство" 1 и 2 ступень</a>
-                    <a href="#" class="package__link -dark">"Родители. Род. Семья"</a>
-                    <a href="#" class="package__link -dark">"Секреты гениальности"</a>
-                    <a href="#" class="package__link -dark">"Коммуникации и манипуляции"</a>
-                    <a href="#" class="package__link -dark">"Ритуал формирования намерений на 2021 год"</a>
-                    <a href="#" class="package__link -dark">"Закрытый клуб в Инстаграм"</a>
+                    <a class="package__link -dark" href="#ex1" rel="modal:open">"Осознанное родительство" 1 и 2 ступень</a>
+                    <div id="ex1" class="modal modal__inf">
+                        <p class="modal__inf--title">Курс “Осознанное родительство”<br> I ступень</p>
+                        <!-- /.modal__inf--title -->
+                        <p class="modal__inf--text">11 онлайн-уроков + обратные связи от ведущих</p>
+                        <p class="modal__inf--text">Всесторонняя подготовка будущих родителей к беременности и родам: от момента планирования ребенка до послеродового восстановления женщины и ухода за новорожденным. Охватывает аспекты психологии, здоровья, отношений, физиологии. Курс полезен в первую очередь будущим мамам, но также содержит важную информацию для отцов. Основан на личном опыте экспертов и проверенных ими методиках.</p>
+                        <!-- /.modal__inf--text -->
+                        <p class="modal__inf--price">Цена без скидки: 7500 рублей</p>
+                        <!-- /.modal__inf--price -->
+                        <a class="button button-more" href="#">Купить I пакет</a> <!-- /.button -->
+                    </div>
+                    <!-- /.package__link--inf -->
+                    <a class="package__link -dark" href="#">"Родители. Род. Семья"</a>
+                    <a class="package__link -dark" href="#">"Секреты гениальности"</a>
+                    <a class="package__link -dark" href="#">"Коммуникации и манипуляции"</a>
+                    <a class="package__link -dark" href="#">"Ритуал формирования намерений на 2021 год"</a>
+                    <a class="package__link -dark" href="#">"Закрытый клуб в Инстаграм"</a>
                 </div>
                 <!-- /.package__inner-text -->
                 <div class="package__cost">
@@ -121,8 +154,12 @@
                 </div>
                 <!-- /.package__cost -->
                 <div class="package__item--footer">
-                    <a href="#" class="button">Купить</a> 
+                    <a class="button button-card" href="#">Купить</a> 
                     <!-- /.button -->
+                    <a class="arrow" href="#">
+                        <svg><use href="sprite.svg#arrow"></use></svg>
+                    </a>
+                    <!-- /.arrow -->
                 </div>
             </div>
             <!-- /.package__inner-item -->
@@ -136,12 +173,12 @@
                 </div>
                 <!-- /.package__item-header -->
                 <div class="package__item--text">
-                    <a href="#" class="package__link">"Осознанное родительство" 1 и 2 ступень</a>
-                    <a href="#" class="package__link">"Родители. Род. Семья"</a>
-                    <a href="#" class="package__link">"Секреты гениальности"</a>
-                    <a href="#" class="package__link">"Коммуникации и манипуляции"</a>
-                    <a href="#" class="package__link">"Ритуал формирования намерений на 2021 год"</a>
-                    <a href="#" class="package__link">"Закрытый клуб в Инстаграм"</a>
+                    <a class="package__link" href="#">"Осознанное родительство" 1 и 2 ступень</a>
+                    <a class="package__link" href="#">"Родители. Род. Семья"</a>
+                    <a class="package__link" href="#">"Секреты гениальности"</a>
+                    <a class="package__link" href="#">"Коммуникации и манипуляции"</a>
+                    <a class="package__link" href="#">"Ритуал формирования намерений на 2021 год"</a>
+                    <a class="package__link" href="#">"Закрытый клуб в Инстаграм"</a>
                 </div>
                 <!-- /.package__inner-text -->
                 <div class="package__cost">
@@ -154,8 +191,12 @@
                 </div>
                 <!-- /.package__cost -->
                 <div class="package__item--footer">
-                    <a href="#" class="button">Купить</a> 
+                    <a class="button button-card" href="#">Купить</a> 
                     <!-- /.button -->
+                    <a class="arrow" href="#">
+                        <svg><use href="sprite.svg#arrow"></use></svg>
+                    </a>
+                    <!-- /.arrow -->
                 </div>
             </div>
             <!-- /.package__inner-item -->
@@ -169,12 +210,12 @@
                 </div>
                 <!-- /.package__item-header -->
                 <div class="package__item--text">
-                    <a href="#" class="package__link">"Осознанное родительство" 1 и 2 ступень</a>
-                    <a href="#" class="package__link">"Родители. Род. Семья"</a>
-                    <a href="#" class="package__link">"Секреты гениальности"</a>
-                    <a href="#" class="package__link">"Коммуникации и манипуляции"</a>
-                    <a href="#" class="package__link">"Ритуал формирования намерений на 2021 год"</a>
-                    <a href="#" class="package__link">"Закрытый клуб в Инстаграм"</a>
+                    <a class="package__link" href="#">"Осознанное родительство" 1 и 2 ступень</a>
+                    <a class="package__link" href="#">"Родители. Род. Семья"</a>
+                    <a class="package__link" href="#">"Секреты гениальности"</a>
+                    <a class="package__link" href="#">"Коммуникации и манипуляции"</a>
+                    <a class="package__link" href="#">"Ритуал формирования намерений на 2021 год"</a>
+                    <a class="package__link" href="#">"Закрытый клуб в Инстаграм"</a>
                 </div>
                 <!-- /.package__inner-text -->
                 <div class="package__cost">
@@ -187,8 +228,12 @@
                 </div>
                 <!-- /.package__cost -->
                 <div class="package__item--footer">
-                    <a href="#" class="button">Купить</a> 
+                    <a class="button button-card" href="#">Купить</a> 
                     <!-- /.button -->
+                    <a class="arrow -yellow" href="#">
+                        <svg><use href="sprite.svg#arrow"></use></svg>
+                    </a>
+                    <!-- /.arrow -->
                 </div>
             </div>
             <!-- /.package__inner-item -->
@@ -286,5 +331,6 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
 </body>
 </html>
