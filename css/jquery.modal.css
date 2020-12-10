@@ -162,6 +162,11 @@
   .modal__inf {
     padding: 35px 35px 40px 20px;
   }
+  .modal a.close-modal {
+    top: 0;
+    right: 0;
+    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2241%22%20height%3D%2240%22%20viewBox%3D%220%200%2041%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cline%20x1%3D%221.35355%22%20y1%3D%220.646447%22%20x2%3D%2240.3535%22%20y2%3D%2239.6464%22%20stroke%3D%22black%22%2F%3E%0A%3Cline%20y1%3D%22-0.5%22%20x2%3D%2255.1543%22%20y2%3D%22-0.5%22%20transform%3D%22matrix%28-0.707107%200.707107%200.707107%200.707107%2040%201%29%22%20stroke%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+  }
 }
 @media(max-width: 414px) {
   .modal {
@@ -181,10 +186,6 @@
   .modal__inf--price {
     font-size: 19px;
     line-height: 21px;
-  }
-  .modal a.close-modal {
-    top: -30px;
-    right: -30px;
   }
 }
 @media(max-width: 375px) {
