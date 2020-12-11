@@ -780,13 +780,12 @@ p {
     }
 
     .video {
-        display: none;
-        // &__inner {
-        //     &--item {
-        //         width: 750px;
-        //         height: 400px;
-        //     }
-        // }
+        &__inner {
+            &--item {
+                width: 750px;
+                height: 400px;
+            }
+        }
     }
     .title {
         &-video {

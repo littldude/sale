@@ -742,8 +742,9 @@ p {
     padding: 16px 0;
   }
 
-  .video {
-    display: none;
+  .video__inner--item {
+    width: 750px;
+    height: 400px;
   }
 
   .title-video {
