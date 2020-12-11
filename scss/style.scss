@@ -912,7 +912,8 @@ p {
 @media (max-width: 568px) {
     .button {
         &-timer {
-            background-color: transparent;
+            background-color: #F05050;
+            color: #ffffff;
             position: absolute;
             bottom: -85px;
             left: 50%;
