@@ -780,12 +780,13 @@ p {
     }
 
     .video {
-        &__inner {
-            &--item {
-                width: 750px;
-                height: 400px;
-            }
-        }
+        display: none;
+        // &__inner {
+        //     &--item {
+        //         width: 750px;
+        //         height: 400px;
+        //     }
+        // }
     }
     .title {
         &-video {
@@ -863,8 +864,7 @@ p {
         }
     }
     .video {
-        // padding: 50px 0 90px 0;
-        display: none;
+        padding: 50px 0 90px 0;
     }
     .footer {
         &__link {
