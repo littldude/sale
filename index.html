@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="js/timer.js" as="script">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preload" href="fonts/gilroy-black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ProximaNova-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ProximaNova-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
+    <script  src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
     <title>Новогодняя распродажа</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="https://vadimkurkin.com/" class="header__logo">
+                <a href="#" class="header__logo">
                     <img src="img/logo.png" alt="Образовательный центр Вадима Куркина">
                 </a> <!-- /.header__logo -->
                 <div class="header__call">
@@ -49,7 +43,7 @@
     <section class="intro">
         <div class="container">
             <div class="intro__inner">
-                <img class="intro__img-mobile" src="img/bg-intro-mobile-min.png" alt="Image">
+                <img class="intro__img-mobile" src="img/bg-intro-mobile.png" alt="Image">
                 <h1 class="title title-intro">Новогодняя распродажа курсов</h1>
                 <!-- /.title -->
                 <p class="subtitle text">Подари себе новую жизнь. Раскрой
@@ -109,7 +103,7 @@
             <div class="video__inner">
                 <h2 class="title title-video">Заголовок для видео</h2>
                 <!-- /.title -->
-                <iframe class="video__inner--item" src="https://www.youtube.com/embed/SEEV5RuiIcU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video__inner--item" src="https://www.youtube.com/embed/SEEV5RuiIcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!-- /.video__inner -->
         </div>
@@ -117,7 +111,7 @@
     </section>
     <!-- /.video -->
     <section class="package">
-        <img class="package-img" src="img/animal-min.png" alt="Art">
+        <img class="package-img" src="img/animal.png" alt="Art">
         <div class="title title-dark">Уроки по саморазвитию на любой вкус</div>
         <!-- /.title -->
         <div class="package__inner" id="course">
@@ -253,7 +247,7 @@
             <div class="autor__inner">
                 <div class="autor__inner--line">
                     <div class="autor__inner--item">
-                        <img src="img/vadim-min.jpg" alt="Вадим Куркин" class="autor__inner--img">
+                        <img src="img/vadim.jpg" alt="Вадим Куркин" class="autor__inner--img">
                     </div>
                     <!-- /.autor__inner-item -->
                     <div class="autor__inner--item">
@@ -295,7 +289,7 @@
                     </div>
                     <!-- /.autor__inner-item -->
                     <div class="autor__inner--item">
-                        <img src="img/yulya-min.jpg" alt="Юлия Куркина" class="autor__inner--img">
+                        <img src="img/yulya.jpg" alt="Юлия Куркина" class="autor__inner--img">
                     </div>
                     <!-- /.autor__inner-item -->
                 </div>
@@ -342,6 +336,6 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <script src="js/jquery.modal.min.js"></script>
+
 </body>
 </html>
