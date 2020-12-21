@@ -1863,7 +1863,7 @@ li {
 						text-decoration: underline #292727;
 					}
 				}
-				&::before{
+				&::before {
 					display: block;
 					content: url("../img/button.svg");
 					margin-right: 10px;
@@ -2943,16 +2943,19 @@ li {
 /*FONTS*/
 @font-face {
 	font-family: "ProximaNova";
-	src: url("../fonts/ProximaNova-Regular.ttf");
+	src: local("../fonts/ProximaNova-Regular.ttf"), url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900");
 	font-weight: 400;
+	font-display: swap;
 }
 @font-face {
 	font-family: "ProximaNova";
-	src: url("../fonts/ProximaNova-Bold.ttf");
+	src: local("../fonts/ProximaNova-Bold.ttf"), url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900");
 	font-weight: 700;
+	font-display: swap;
 }
 @font-face {
 	font-family: "Gilroy";
-	src: url("../fonts/gilroy-black.ttf");
+	src: local("../fonts/gilroy-black.ttf"), url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900");
 	font-weight: 900;
+	font-display: swap;
 }
