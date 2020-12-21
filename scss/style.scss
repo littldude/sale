@@ -195,6 +195,19 @@ li {
 		fill: #FFE7B7;
 	}
 }
+.mostpop {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    color: #292929;
+    font-size: 20px;
+    font-weight: 900;
+}
 .intro {
 	position: relative;
 	background-color: #204D48;
@@ -334,6 +347,7 @@ li {
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 		&--header {
+            position: relative;
 			font-family: 'ProximaNova';
 			padding: 45px 10px 50px 85px;
 			border-bottom: 1px solid #FFE7B7;
@@ -1382,7 +1396,11 @@ li {
 		height: 50px;
 		font-size: 18px;
 		padding: 12px 0;
-	}
+    }
+    .mostpop {
+        color: #292929;
+        font-size: 18px;
+    }
 }
 @media (max-width: 375px) {
 	.intro-timer__title--mobile {
@@ -1463,7 +1481,13 @@ li {
 	}
 	.modal__inf {
 		padding: 30px 10px 40px 10px;
-	}
+    }
+    .mostpop {
+        top: 5px;
+        right: 5px;
+        font-size: 16px;
+    }
+    
 }
 @media (max-width: 320px) {
 	.intro {
