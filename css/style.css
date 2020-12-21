@@ -390,7 +390,7 @@ li {
   -webkit-text-decoration: underline #292727;
   text-decoration: underline #292727;
 }
-.package__item--body__link::before {
+.package__item--body__link::after {
   display: block;
   content: url("../img/button.svg");
   margin-left: 10px;
@@ -1818,6 +1818,7 @@ li {
   margin: 0 auto;
   width: 980px;
   height: 550px;
+  border: none;
 }
 
 .package__inner {
