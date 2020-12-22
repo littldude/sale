@@ -209,8 +209,6 @@ li {
 	}
 }
 .new {
-	display: flex;
-	align-items: center;
 	&::after {
 		display: flex;
 		margin-left: 3px;
@@ -406,9 +404,7 @@ li {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-align: start;
-				    -ms-flex-align: start;
-				        align-items: flex-start;
+				align-items: center;
 				font-family: 'ProximaNova';
 				font-style: normal;
 				font-weight: normal;
@@ -418,6 +414,10 @@ li {
 				text-decoration: underline dashed 1px #f5f5f570;
 				&:not(.white) {
 					text-decoration: underline dashed 1px #9b9b9b54;;
+				}
+				&:not(.new) {
+					display: flex;
+					align-items: flex-start;
 				}
 				&:hover {
 					-webkit-transition: 1s linear;
