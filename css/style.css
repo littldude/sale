@@ -732,6 +732,14 @@ li {
   color: #292727;
 }
 
+.modal__inf--title__bold {
+  margin-top: 40px;
+  margin-bottom: 27px;
+}
+.modal__inf--title__bold:first-child {
+  margin-top: 0;
+}
+
 .modal__inf--text {
   display: block;
   margin-bottom: 20px;

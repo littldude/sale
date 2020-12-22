@@ -202,6 +202,7 @@ li {
 		fill: #292727;
 	}
 }
+
 .-yellow {
 	svg {
 		fill: #FFE7B7;
@@ -721,6 +722,13 @@ li {
 	font-size: 26px;
 	line-height: 32px;
 	color: #292727;
+}
+.modal__inf--title__bold {
+	margin-top: 40px;
+	margin-bottom: 27px;
+	&:first-child {
+		margin-top: 0;
+	}
 }
 .modal__inf--text {
 	display: block;
