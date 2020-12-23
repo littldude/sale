@@ -780,6 +780,11 @@ li {
   color: #292727;
 }
 
+.modal__inf--text__italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .modal__inf--text__bold {
   font-weight: bold;
 }
