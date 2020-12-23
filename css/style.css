@@ -780,6 +780,10 @@ li {
   color: #292727;
 }
 
+.modal__inf--text__bold {
+  font-weight: bold;
+}
+
 .modal__inf--price {
   font-family: "ProximaNova";
   font-style: normal;

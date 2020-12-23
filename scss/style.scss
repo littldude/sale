@@ -194,6 +194,7 @@ li {
 		}
     }
 }
+
 .arrow {
 	display: block;
 	margin-left: 40px;
@@ -773,6 +774,9 @@ li {
 	font-size: 20px;
 	line-height: 24px;
 	color: #292727;
+}
+.modal__inf--text__bold {
+	font-weight: bold;
 }
 .modal__inf--price {
 	font-family: 'ProximaNova';
