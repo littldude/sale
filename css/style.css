@@ -201,6 +201,10 @@ li {
   background-color: #204D48;
   color: #FFE7B7;
 }
+.button-card__red {
+  background-color: #FF6464;
+  color: #ffffff;
+}
 
 .arrow {
   display: block;
@@ -908,6 +912,9 @@ li {
     line-height: 57px;
   }
 
+  .package__item--body {
+    padding: 30px 40px 30px 25px;
+  }
   .package__item--body__link {
     font-size: 18px;
   }
@@ -1414,6 +1421,9 @@ li {
     width: 144px;
     top: -140px;
   }
+  .package__item--body {
+    padding: 30px 120px 30px 25px;
+  }
 
   .autor__inner--item {
     width: 93%;
@@ -1577,6 +1587,10 @@ li {
 @media (max-width: 320px) {
   .intro {
     overflow: hidden;
+  }
+
+  .package__item--body {
+    padding: 10px 50px 10px 25px;
   }
 }
 /*FONTS*/
